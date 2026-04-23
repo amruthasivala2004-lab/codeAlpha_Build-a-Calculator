@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1e3a8a, #9333ea);
+  font-family: Arial;
+}
+
+.calculator {
+  background: #111;
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+#display {
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: right;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #222;
+  color: white;
+}
+
+/* Buttons grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #333;
+  color: white;
+  transition: 0.2s;
+}
+
+/* Hover effect */
+button:hover {
+  background: #555;
+  transform: scale(1.05);
+}
+
+/* Equal button */
+.equal {
+  background: #22c55e;
+  grid-row: span 2;
+}
+
+/* Zero button */
+.zero {
+  grid-column: span 2;
+}
